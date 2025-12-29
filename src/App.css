@@ -1,0 +1,233 @@
+/* =========================
+   BASE (DESKTOP FIRST)
+   ========================= */
+
+body {
+  background-color: #e8d1ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.list-filters {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.button-filter {
+  border: solid 2px #b05eff;
+}
+
+.list-container {
+  width: 50%;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.task {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text {
+  max-width: 60%;
+}
+
+.remove-button {
+  width: 20%;
+  margin-left: 10%;
+  border: solid 2px #b05eff;
+}
+
+.no-tasks {
+  margin-left: 20%;
+}
+
+#app {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+#title-form {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+#form-input {
+  height: 30px;
+  width: 50%;
+  border-radius: 5px;
+  border: solid 2px #b05eff;
+}
+
+#form-button {
+  display: flex;
+  justify-content: center;
+}
+
+#add-button {
+  border: solid 2px #b05eff;
+}
+
+#list-filtered {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* =========================
+   TABLET (768px a 1023px)
+   ========================= */
+@media (max-width: 1023px) {
+  body {
+    padding: 0 16px;
+  }
+
+  .list-container {
+    width: 65%;
+    margin-left: 3%;
+    padding: 10px;
+  }
+
+  .list {
+    gap: 30px;
+  }
+
+  .task-text {
+    max-width: 65%;
+  }
+
+  .remove-button {
+    width: 28%;
+    margin-left: 6%;
+  }
+
+  .list-filters {
+    row-gap: 16px;
+  }
+
+  #form-input {
+    width: 70%;
+  }
+}
+
+/* =========================
+   MOBILE (hasta 767px)
+   ========================= */
+@media (max-width: 767px) {
+  body {
+    background-color: #e8d1ff;
+    padding: 12px;
+  }
+
+  .list-filters {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    row-gap: 10px;
+  }
+
+  .button-filter {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .list-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .list {
+    gap: 16px;
+  }
+
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .task-text {
+    max-width: 100%;
+  }
+
+  .remove-button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .no-tasks {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #title {
+    margin-bottom: 16px;
+  }
+
+  #form {
+    row-gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  #title-form {
+    font-size: x-large;
+  }
+
+  #form-input {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  #add-button {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  #list-filtered {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
